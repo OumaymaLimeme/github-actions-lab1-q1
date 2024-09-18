@@ -10,8 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v4  # This checks out your repository's code
+
     - name: Set up Python 3.8
-      uses: actions/setup-python@v4  # Update to the latest version (v4)
+      uses: actions/setup-python@v4  # Set up Python 3.8
       with:
         python-version: 3.8
 
